@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BellCast.App/BellCast.App.csproj" />
+    <Project Path="src/BellCast.Core/BellCast.Core.csproj" />
+    <Project Path="src/BellCast.Infrastructure/BellCast.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BellCast.Tests/BellCast.Tests.csproj" />
+  </Folder>
+</Solution>

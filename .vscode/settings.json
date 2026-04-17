@@ -14,7 +14,7 @@
     }
   },
   "workbench.colorTheme": "Default Dark Modern",
-  "dotnet.defaultSolution": "BellCast.sln",
+  "dotnet.defaultSolution": "BellCast.slnx",
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
