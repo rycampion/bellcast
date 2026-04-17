@@ -25,3 +25,10 @@ All notable changes to BellCast are recorded here. Format loosely follows [Keep 
 - Five placeholder pages under `src/BellCast.App/Views/`: `DashboardPage`, `SchedulesPage`, `SoundLibraryPage`, `HolidaysPage`, `SettingsPage`. Each uses `ui:TextBlock` typography (TitleLarge + Body Secondary) and shows a short description of its future purpose.
 - `Settings` lives in the NavigationView footer; other four in the main menu.
 - Phase 1 Chunk 2 verification: `dotnet build` green (0/0), app launches, log captures `BellCast starting up`, process stable with Mica-themed window visible.
+- Phase 2 Chunk A — `BellCast.Core` domain model:
+  - `Recurrence/DayOfWeekSet` — `[Flags]` enum with `Weekdays`, `Weekend`, `EveryDay` helpers and `Contains(DayOfWeek)` / `FromDayOfWeek` extensions.
+  - `Recurrence/RecurrenceSpec` — polymorphic base record with seven variants: `OneTimeRecurrence`, `HourlyRecurrence`, `DailyRecurrence`, `WeeklyRecurrence`, `DayOfMonthRecurrence`, `NthWeekdayOfMonthRecurrence`, `AnnuallyRecurrence`. "Monthly" from the plan is covered by `DayOfMonth` and `NthWeekdayOfMonth`.
+  - `Models/Schedule`, `Models/SoundFile`, `Models/ExclusionSet`, `Models/ExclusionRule` (polymorphic: `SpecificDateRule`, `DateRangeRule`, `WeekdayRule`, `TimeWindowRule`), `Models/AppSettings` with `ThemePreference` enum and a `Default` seed.
+  - `Serialization/BellCastJson` — shared `JsonSerializerOptions` (web defaults, `JsonStringEnumConverter`). Polymorphism uses `$type` discriminator.
+- Tests: 29 passing — variant round-trips for every `RecurrenceSpec` and `ExclusionRule` subtype, `DayOfWeekSet` flag semantics, `Schedule` / `SoundFile` / `ExclusionSet` / `AppSettings` JSON round-trips, default-settings invariant.
+- Removed `Class1.cs` / `UnitTest1.cs` scaffolding placeholders.
