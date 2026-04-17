@@ -1,0 +1,29 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [120],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.eol": "\r\n",
+  "terminal.integrated.defaultProfile.windows": "PowerShell 7",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell 7": {
+      "path": "pwsh.exe",
+      "icon": "terminal-powershell",
+      "args": ["-NoLogo"]
+    }
+  },
+  "workbench.colorTheme": "Default Dark Modern",
+  "dotnet.defaultSolution": "BellCast.sln",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[xml]": {
+    "editor.tabSize": 2
+  },
+  "[xaml]": {
+    "editor.tabSize": 4
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false
+}
