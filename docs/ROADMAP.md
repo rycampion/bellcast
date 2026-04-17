@@ -22,7 +22,7 @@ Verify `.NET 10 SDK`, `git`, `gh`, VS Code, PowerShell 7, Windows Terminal, and 
 
 ## Phase 1 — Project skeleton ⬜
 
-- Solution with `BellCast.App` (WPF), `BellCast.Core`, `BellCast.Infrastructure`, `BellCast.Tests`
+- Solution (`BellCast.slnx` — .NET 10 XML format) with `BellCast.App` (WPF), `BellCast.Core`, `BellCast.Infrastructure`, `BellCast.Tests`
 - `global.json` pinning .NET 10
 - WPF-UI theming + shell window with empty nav to five pages
 - Serilog rolling file logging
