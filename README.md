@@ -9,7 +9,7 @@
 
 ## What is this?
 
-BellCast is a 2026-era replacement for legacy school/office bell-scheduling apps (think "BellWiz, rebuilt"). It schedules and plays audio files through your chosen sound output on recurring or one-off schedules, with holiday exclusions, multiple output devices, and NTP-based time sync — so bells fire on time, through the right speakers, every time.
+BellCast is a modern bell-scheduling application. It schedules and plays audio files through your chosen sound output on recurring or one-off schedules, with holiday exclusions, multiple output devices, and NTP-based time sync — so bells fire on time, through the right speakers, every time.
 
 ### Planned features (MVP)
 
